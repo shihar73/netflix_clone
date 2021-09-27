@@ -1,0 +1,52 @@
+.row{
+    margin-left: 20px;
+    color: #fff;
+}
+
+.posters{
+    display: flex;
+    padding: 20px;
+    /* overflow:auto; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    
+
+}
+
+.posters::-webkit-scrollbar{
+    display: none;
+    width: 0 !important;
+    height: 0 !important;
+    -webkit-appearance: none;
+    background: transparent;
+    
+}
+.poster{
+    cursor: pointer;
+    height: 250px;
+    margin-right: 10px;
+}
+.sPoster{
+    cursor: pointer;
+    height: 100px;
+    margin-right: 10px;
+}
+.poster:hover{
+    transform: scale(1.1);
+}
+.sPoster:hover{
+    transform: scale(1.1);
+}
+
+
+@media screen and (min-width:1800px){
+    .poster{
+        height: 350px;
+    }
+    .sPoster{
+        height: 175px;
+    }
+    
+}
